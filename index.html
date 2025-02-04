@@ -58,6 +58,32 @@
             margin-bottom: 2rem;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        .timeline {
+            text-align: left;
+            margin-top: 1rem;
+        }
+        .timeline ul {
+            list-style: none;
+            padding: 0;
+        }
+        .timeline li {
+            background: #eee;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .timeline li:hover {
+            background: #ddd;
+        }
+        .timeline-content {
+            display: none;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-left: 4px solid #333;
+            margin-top: 0.5rem;
+        }
         footer {
             background: #333;
             color: white;
@@ -66,6 +92,16 @@
             margin-top: 3rem;
         }
     </style>
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -102,22 +138,34 @@
             </div>
         </section>
 
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li>Proficient in Java, Fusion 360, Creality Slicer, and MakerBot Creator</li>
-                <li>Strong foundation in Mathematics, Physics, and Engineering</li>
-                <li>Experienced in swimming and team leadership</li>
-                <li>Hobbyist in simulation racing, 3D printing, and automotive mechanics</li>
-            </ul>
-        </section>
-
         <section id="projects" class="section">
             <h2>CS Advanced Topics Projects</h2>
             <div class="card">
                 <h3>Magic Mirror Project</h3>
                 <p>A smart mirror project integrating real-time data display and custom-built software enhancements.</p>
                 <p><a href="https://docs.google.com/document/d/1etC-dVOURyRU-q2Vj1cZoqd7PZJzfqSPmil9ZzoLyNk/edit?tab=t.0" target="_blank">View Project Details</a></p>
+                <div class="timeline">
+                    <h4>Project Timeline</h4>
+                    <ul>
+                        <li onclick="toggleContent('step1')">Research & Conceptualization</li>
+                        <div id="step1" class="timeline-content">Explored existing smart mirror designs, researched necessary hardware, and developed initial project goals.</div>
+                        
+                        <li onclick="toggleContent('step2')">Hardware Selection & Assembly</li>
+                        <div id="step2" class="timeline-content">Chose appropriate components, including a display, Raspberry Pi, and sensors, and built the mirror structure.</div>
+                        
+                        <li onclick="toggleContent('step3')">Software Development & UI Design</li>
+                        <div id="step3" class="timeline-content">Developed a user-friendly interface and programmed basic functionalities, such as weather and calendar integration.</div>
+                        
+                        <li onclick="toggleContent('step4')">Integration of Real-Time Data</li>
+                        <div id="step4" class="timeline-content">Connected APIs for live weather, news, and scheduling features.</div>
+                        
+                        <li onclick="toggleContent('step5')">AI & Machine Learning Enhancements</li>
+                        <div id="step5" class="timeline-content">Implemented facial recognition, voice commands, and personalized data insights using AI.</div>
+                        
+                        <li onclick="toggleContent('step6')">Final Testing & Deployment</li>
+                        <div id="step6" class="timeline-content">Performed extensive testing, debugging, and optimization for seamless operation before final implementation.</div>
+                    </ul>
+                </div>
             </div>
         </section>
     </div>
