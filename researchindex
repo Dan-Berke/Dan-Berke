@@ -1,0 +1,41 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+
+export default function SmartMirrorProject() {
+  const [activeSection, setActiveSection] = useState(null);
+
+  const toggleSection = (section) => {
+    setActiveSection(activeSection === section ? null : section);
+  };
+
+  return (
+    <div className="p-8 max-w-3xl mx-auto">
+      <h1 className="text-3xl font-bold mb-4">Smart Mirror Project</h1>
+      <p className="mb-6 text-gray-700">
+        This project explores the development of a smart mirror using a Raspberry Pi and the MagicMirror² framework.
+        Our research focuses on integrating advanced features like voice activation, touchscreen capabilities, and API
+        integrations to create a highly interactive experience.
+      </p>
+      
+      <div className="space-y-2">
+        {[
+          { title: "Software Setup & MagicMirror² Framework", content: "The first step involves setting up the Raspberry Pi with Raspberry Pi OS and installing the MagicMirror² framework. This open-source platform allows for extensive customization and modular integration, forming the foundation of the smart mirror." },
+          { title: "Customization & Feature Exploration", content: "Research includes customizing JavaScript modules for layout adjustments, color schemes, and enabling/disabling features. We will explore voice recognition libraries, touchscreen overlays, and API integrations for music and weather updates." },
+          { title: "Comparing Existing Smart Mirror Projects", content: "By analyzing various implementations, we aim to merge the best features—voice activation, touchscreen controls, and seamless UI integration—into a single, optimized design." },
+          { title: "Benefits of Smart Mirrors", content: "Smart mirrors enhance daily routines by providing real-time information, hands-free interaction, and entertainment options, making them valuable additions to smart homes." }
+        ].map((section, index) => (
+          <div key={index}>
+            <Button onClick={() => toggleSection(index)} className="w-full text-left">
+              {section.title}
+            </Button>
+            {activeSection === index && (
+              <div className="p-4 bg-gray-100 mt-2 rounded">
+                {section.content}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
