@@ -1,0 +1,53 @@
+{
+  "timeline": [
+    {
+      "week": "Week 1",
+      "title": "Initial Research & Planning",
+      "description": "Researching smart mirror projects, setting goals, and planning the feature set."
+    },
+    {
+      "week": "Week 2",
+      "title": "Setting Up Raspberry Pi",
+      "description": "Installing Raspberry Pi OS, configuring MagicMirror², and testing the basic setup."
+    },
+    {
+      "week": "Week 3-4",
+      "title": "Feature Integration and portfolio updating",
+      "description": "In this week I will update my portfolio to include multiple pages."
+    },
+    {
+      "week": "Week 5-6",
+      "title": "Debugging & Optimization",
+      "description": "Fixing issues, optimizing performance, and refining the mirror display for a seamless experience."
+    },
+    {
+      "week": "Final Week",
+      "title": "Presentation & Testing",
+      "description": "Conducting final tests, gathering feedback, and preparing a project presentation."
+    }
+  ],
+  "weeklyUpdates": [
+    {
+      "week": "Week 1",
+      "title": "Completed Initial Research",
+      "description": "Gathered information on different smart mirror frameworks and planned project requirements.",
+      "date": "03/05/2025"
+    },
+    {
+      "week": "Week 2",
+      "title": "Set Up Raspberry Pi",
+      "description": "Successfully installed Raspberry Pi OS and configured the MagicMirror² framework.",
+      "date": "03/12/2025"
+    }
+  ],
+  "MVP": [
+    {
+      "week": "Minimum Viable Product",
+      "title": "Total project completion at this point",
+      "description": "Raspberry Pi with HDMI cable, USB-C, and camera extension have all been connected to the monitor that displays the information that would be behind the mirror. This info includes date and time, local news, temperature, and a window to display the camera input. Spotify has been integrated and an easy bluetooth connection to a speaker can be interfaced through the mirror ",
+      "date": "03/10/2025",
+      "video": "/IMG_8849.MOV"
+
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+/* Research Page */
+.research-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Title and Links */
+.research-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.homepage-link {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.homepage-link a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.homepage-link a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+.research-section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.research-section h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #4f46e5;
+  padding-bottom: 5px;
+  color: #333;
+}
+
+.research-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}

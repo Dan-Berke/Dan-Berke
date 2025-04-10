@@ -1,0 +1,13 @@
+#root {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0; /* Removed unnecessary padding */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full height */
+}
+
+.main-content {
+  flex: 1; /* Makes main content take available space */
+}
