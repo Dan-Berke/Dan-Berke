@@ -32,7 +32,7 @@ function Home() {
           <ul className="projects-list">
             <li className="project-item">
               <Link to="/research" className="project-link">
-                <h3 className="project-title">Project Title 1</h3>
+                <h3 className="project-title">Magic Mirror Project</h3>
                 <p className="project-description">
                   Description of this project, emphasizing key features and technologies used in the process.
                 </p>

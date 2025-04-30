@@ -17,13 +17,13 @@
     },
     {
       "week": "Week 5-6",
-      "title": "Debugging & Optimization",
-      "description": "Fixing issues, optimizing performance, and refining the mirror display for a seamless experience."
+      "title": "Project timeline creation and weekly updates section to summarize actual additions",
+      "description": "Update portfolio to include a project page with project timeline, weekly real-time updates, and in the future implement a framework to present my MVP."
     },
     {
-      "week": "Final Week",
-      "title": "Presentation & Testing",
-      "description": "Conducting final tests, gathering feedback, and preparing a project presentation."
+      "week": "Week 7",
+      "title": "Portfolio Cleanup & Early Prototype Submission",
+      "description": "I will completely overhaul the portfolio to be in React/JSX/CSX with easy-to-edit JSON files rather than keeping the single HTML files with bad styling."
     }
   ],
   "weeklyUpdates": [
@@ -31,23 +31,76 @@
       "week": "Week 1",
       "title": "Completed Initial Research",
       "description": "Gathered information on different smart mirror frameworks and planned project requirements.",
-      "date": "03/05/2025"
+      "date": "1/14/2025"
     },
     {
       "week": "Week 2",
       "title": "Set Up Raspberry Pi",
       "description": "Successfully installed Raspberry Pi OS and configured the MagicMirror² framework.",
-      "date": "03/12/2025"
+      "date": "01/21/2025"
+    },
+    {
+      "week": "Week 3",
+      "title": "Constructed portfolio",
+      "description": "Made the framework and started my HTML website portfolio through GitHub.",
+      "date": "01/28/2025"
+    },
+    {
+      "week": "Week 4",
+      "title": "Cleaned up portfolio",
+      "description": "Made a separate research page on the portfolio to keep the research portion of the project separate.",
+      "date": "02/03/2025"
+    },
+    {
+      "week": "Week 5",
+      "title": "Portfolio remodel and additional module implementation",
+      "description": "Reconstructed portfolio in React architecture, making it easier to add additional pages and create a proper page system with different CSS files. Implemented more Magic Mirror modules like a date and time display, with a handmade school schedule progress bar.",
+      "date": "02/10/2025"
+    },
+    {
+      "week": "Week 6",
+      "title": "Portfolio additions and further project cleanup",
+      "description": "Added a project weekly updates and timeline section to the projects page in my website, as well as implemented image importing CSS with a cool border.",
+      "date": "02/17/2025"
+    },
+    {
+      "week": "Week 7",
+      "title": "Spotify support for the mirror",
+      "description": "Spotify has been integrated, and an easy Bluetooth connection to a speaker can be interfaced through the mirror.",
+      "date": "02/23/2025"
+    },
+    {
+      "week": "Week 8",
+      "title": "Updated portfolio with cleaner CSS",
+      "description": "Updated portfolio with better colors, nicer-looking text boxes, and better shading to make the portfolio easier to read and update. I also included an updateable `.json` file in the directory.",
+      "date": "02/27/2025"
+    },
+    {
+      "week": "Week 9",
+      "title": "Submit MVP writeup",
+      "description": "Summarized the full scope of our currently produced product.",
+      "date": "03/05/2025"
+    },
+    {
+      "week": "Week 10",
+      "title": "...",
+      "description": "Summarized the full scope of our currently produced product.",
+      "date": "03/10/2025"
     }
   ],
   "MVP": [
     {
       "week": "Minimum Viable Product",
       "title": "Total project completion at this point",
-      "description": "Raspberry Pi with HDMI cable, USB-C, and camera extension have all been connected to the monitor that displays the information that would be behind the mirror. This info includes date and time, local news, temperature, and a window to display the camera input. Spotify has been integrated and an easy bluetooth connection to a speaker can be interfaced through the mirror ",
+      "description": "My Minimum Viable Product is a computer monitor connected through HDMI to a raspberry pi. this monitor will display things on the mirror such as date and time, weather statistics, and a progress bar to track the VHHS period schedule. Spotify functionality is implemented, however there is no way to play the music yet. We have also attached a camera to the raspberry pi and got the video signal into the computer, allowing later implementation of facial regonition",
       "date": "03/10/2025",
       "video": "/IMG_8849.MOV"
-
+    }
+  ],
+  "PostMVP": [
+    {
+      "title": "Post-MVP Enhancements",
+      "description": "oeijdowijedojwied"
     }
   ]
 }
