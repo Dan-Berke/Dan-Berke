@@ -195,8 +195,40 @@ npm install`}</CodeBlock>
           </li>
         </ul>
       </section>
+      {/* ─────────────────────── Updating MagicMirror ─────────────────────── */}
+      <section className="doc-section">
+        <h2 className="section-title">Updating MagicMirror</h2>
+        <p className="doc-text">
+          Always connect the Pi to a hotspot before updating. <strong>Do not use the D128 Guests Wi-Fi</strong> — it blocks GitHub and prevents updates.
+        </p>
+        <ol className="doc-list">
+          <li>
+            <strong>Stash any changes</strong> to avoid merge errors:
+            <CodeBlock>{`cd ~/MagicMirror
+      git stash`}</CodeBlock>
+          </li>
+          <li>
+            <strong>Pull the latest code and reinstall dependencies:</strong>
+            <CodeBlock>{`git pull
+      npm install --verbose`}</CodeBlock>
+          </li>
+          <li>
+            <strong>If you get a Node.js version error:</strong>
+            <CodeBlock>{`sudo npm install -g n
+      sudo n 22`}</CodeBlock>
+            <p className="doc-text">Then retry:</p>
+            <CodeBlock>{`npm install --verbose`}</CodeBlock>
+          </li>
+          <li>
+            <strong>If install fails with ENOTEMPTY:</strong>
+            <CodeBlock>{`rm -rf node_modules
+      rm package-lock.json
+      npm install --verbose`}</CodeBlock>
+          </li>
+        </ol>
+      </section>
 
-      <p className="doc-footer">Documentation updated April 30, 2025.</p>
+      <p className="doc-footer">Documentation updated May 08, 2025.</p>
     </div>
   );
 }
