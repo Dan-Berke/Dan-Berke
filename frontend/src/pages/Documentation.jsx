@@ -126,6 +126,80 @@ npm install`}</CodeBlock>
         </p>
       </section>
 
+      {/* ─────────────────────── Remote YouTube Playlist ─────────────────────── */}
+      <section className="doc-section">
+        <h2 className="section-title">MMM-RemoteYoutube Playlist</h2>
+        <p className="doc-text">
+          <code>MMM-RemoteYoutube</code> lets the mirror cycle through a curated YouTube playlist—
+          nothing outside that playlist will ever be shown. Videos advance automatically (or resume
+          where you left off after a restart), making it perfect for dashboards, ambience loops, or
+          classroom slides.
+        </p>
+
+        <h3 className="sub-title">Installation</h3>
+        <ol className="doc-list">
+          <li>
+            Clone the module into <code>~/MagicMirror/modules</code>:
+            <CodeBlock>{`cd ~/MagicMirror/modules
+git clone https://github.com/your-org/MMM-RemoteYoutube.git`}</CodeBlock>
+          </li>
+          <li>
+            Install its dependencies:
+            <CodeBlock>{`cd MMM-RemoteYoutube
+npm install`}</CodeBlock>
+          </li>
+        </ol>
+
+        <h3 className="sub-title">Configuration</h3>
+        <p className="doc-text">
+          Add the snippet below to the <code>modules</code> array in
+          <code>config/config.js</code>. Only <code>playlistId</code> is required—the rest are
+          sensible defaults you can tweak later.
+        </p>
+        <CodeBlock>{`{
+  module: "MMM-RemoteYoutube",
+  position: "fullscreen_above",   // or any region; "fullscreen_*" works best
+  config: {
+    playlistId: "PLMqued8J4TOWFVoQKRasSufO75jGnT7tU",
+    shuffle: true,                // Play items in random order
+    loop: true,                   // Restart when the last video finishes
+    hideControls: true,           // Clean, distraction-free UI
+    updateInterval: 10 * 60 * 1000 // Refresh playlist every 10 min
+  }
+}`}</CodeBlock>
+
+        <h3 className="sub-title">Adding Videos to the Playlist</h3>
+        <p className="doc-text">
+          Anyone with the link below can expand the playlist. Open the URL in a browser while signed
+          in to the desired YouTube account, then click
+          <strong>&nbsp;“Save → Playlist → MM Remote YouTube”</strong> on any video you want to add.
+        </p>
+        <a
+          href="https://www.youtube.com/playlist?list=PLMqued8J4TOWFVoQKRasSufO75jGnT7tU&jct=5CE54I0Tp_FdVYvz6ZRIPA"
+          target="_blank"
+          rel="noreferrer"
+          className="doc-link"
+        >
+          Open the shared playlist ↗
+        </a>
+
+        <h3 className="sub-title">Quick Tips</h3>
+        <ul className="doc-list">
+          <li>
+            To force a playlist refresh without waiting for <code>updateInterval</code>, restart
+            MagicMirror (<code>Ctrl&nbsp;+&nbsp;Q</code> → <code>npm start</code>).
+          </li>
+          <li>
+            <code>hideControls</code> can be set to <code>false</code> during setup/debugging so you
+            can scrub or skip.
+          </li>
+          <li>
+            If videos buffer slowly, try lowering the Raspberry Pi’s
+            <code>gpu_mem</code> split in <code>/boot/config.txt</code> or switch to 720 p output.
+          </li>
+        </ul>
+      </section>
+
       {/* ───────────────────────── Spotify Auth ───────────────────────── */}
       <section className="doc-section">
         <h2 className="section-title">Spotify Developer Authentication</h2>
