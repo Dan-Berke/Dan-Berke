@@ -31,7 +31,7 @@
       "week": "Week 1",
       "title": "Completed Initial Research",
       "description": "Gathered information on different smart mirror frameworks and planned project requirements.",
-      "date": "1/14/2025"
+      "date": "01/14/2025"
     },
     {
       "week": "Week 2",
@@ -54,69 +54,69 @@
     {
       "week": "Week 5",
       "title": "Portfolio remodel and additional module implementation",
-      "description": "Reconstructed portfolio in React architecture, making it easier to add additional pages and create a proper page system with different CSS files. Implemented more Magic Mirror modules like a date and time display, with a handmade school schedule progress bar.",
+      "description": "Reconstructed portfolio in React architecture, making it easier to add additional pages and create a proper page system with different CSS files. Implemented more Magic Mirror modules like a date and time display with a handmade school-schedule progress bar.",
       "date": "02/10/2025"
     },
     {
       "week": "Week 6",
       "title": "Portfolio additions and further project cleanup",
-      "description": "Added a project weekly updates and timeline section to the projects page in my website, as well as implemented image importing CSS with a cool border.",
+      "description": "Added a project weekly-updates timeline section to the Projects page in my website, and implemented image-importing CSS with a decorative border.",
       "date": "02/17/2025"
     },
     {
       "week": "Week 7",
       "title": "Spotify support for the mirror",
-      "description": "Spotify has been integrated, and an easy Bluetooth connection to a speaker can be interfaced through the mirror.",
+      "description": "Integrated Spotify authentication; the mirror can now pair to a Bluetooth speaker and display current track info.",
       "date": "02/23/2025"
     },
     {
       "week": "Week 8",
       "title": "Updated portfolio with cleaner CSS",
-      "description": "Updated portfolio with better colors, nicer-looking text boxes, and better shading to make the portfolio easier to read and update. I also included an updateable `.json` file in the directory.",
+      "description": "Refreshed the color palette, typography, and shadow depth; moved hard-coded content into JSON for easier updates.",
       "date": "02/27/2025"
     },
     {
       "week": "Week 9",
-      "title": "Submit MVP writeup",
-      "description": "Summarized the full scope of our currently produced product.",
+      "title": "Submitted MVP write-up",
+      "description": "Documented our minimum-viable mirror in a formal report and pushed it to the project site.",
       "date": "03/05/2025"
     },
     {
       "week": "Week 10",
-      "title": "...",
-      "description": "Summarized the full scope of our currently produced product.",
-      "date": "03/10/2025"
+      "title": "Measured & Modeled the Enclosure",
+      "description": "Used digital calipers to record exact dimensions of the monitor, Pi, and power hardware; created a tight-tolerance CAD model of the frame and back housing in Fusion 360.",
+      "date": "03/12/2025"
     },
     {
       "week": "Week 11",
-      "title": "...",
-      "description": "Summarized the full scope of our currently produced product.",
-      "date": "03/10/2025"
+      "title": "Test-Print Tolerance Coupons",
+      "description": "Printed small fit-check coupons to verify the caliper-derived clearances (press-fits, snap lugs, cable channels) and tweaked the CAD until each part slid smoothly with no wobble.",
+      "date": "03/19/2025"
     },
     {
       "week": "Week 12",
-      "title": "...",
-      "description": "Summarized the full scope of our currently produced product.",
-      "date": "03/10/2025"
+      "title": "Sectioned & Printed Full-Size Parts",
+      "description": "Split the oversized frame into four dovetailed quadrants to fit the 220 × 220 mm bed; printed all pieces in PETG, pausing mid-print for accent-color layers.",
+      "date": "03/26/2025"
     },
     {
       "week": "Week 13",
-      "title": "...",
-      "description": "Summarized the full scope of our currently produced product.",
-      "date": "03/10/2025"
+      "title": "Assembled & Weight-Reduced the Frame",
+      "description": "Epoxy-glued and clamped the quadrants, then reinforced seams with printed splines; added honeycomb cut-outs in non-structural zones to save about 30 % filament and 120 g of weight.",
+      "date": "04/02/2025"
     },
     {
       "week": "Week 14",
-      "title": "...",
-      "description": "Summarized the full scope of our currently produced product.",
-      "date": "03/10/2025"
+      "title": "Final Finishing & Cable-Routing Holes",
+      "description": "Wet-sanded seams, filled gaps with PLA putty, sprayed two coats of satin black, and drilled oval pass-throughs for USB-C/HDMI; installed heat-set inserts for removable rear panels.",
+      "date": "04/09/2025"
     }
   ],
   "MVP": [
     {
       "week": "Minimum Viable Product",
       "title": "Total project completion at this point",
-      "description": "My Minimum Viable Product is a computer monitor connected through HDMI to a raspberry pi. this monitor will display things on the mirror such as date and time, weather statistics, and a progress bar to track the VHHS period schedule. Spotify functionality is implemented, however there is no way to play the music yet. We have also attached a camera to the raspberry pi and got the video signal into the computer, allowing later implementation of facial regonition",
+      "description": "The MVP is a monitor connected over HDMI to a Raspberry Pi, displaying time, weather, and a VHHS period-schedule progress bar. Spotify information works, and a Pi Camera streams video for future facial recognition.",
       "date": "03/10/2025",
       "video": "/IMG_8849.MOV"
     }
@@ -126,5 +126,11 @@
       "title": "Post-MVP Enhancements",
       "description": "oeijdowijedojwied"
     }
-  ]
+  ],
+  "finalPresentation": {
+    "title": "Final Product Demo",
+    "description": "A walkthrough of the finished smart mirror, including the 3-D-printed housing, cable management, ambient LED lighting, Spotify playback, and a facial-recognition preview.",
+    "date": "04/30/2025",
+    "video": "/IMG_9385.mp4"
+  }
 }
